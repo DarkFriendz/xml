@@ -23,6 +23,14 @@ lista = {
         "aliq": 0.00,
         "vu": 30.00,
         "amount": 3
+    },
+    3: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
     }
 }
 
