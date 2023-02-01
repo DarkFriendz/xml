@@ -10,6 +10,7 @@ tamanho = [A4[0]-mm2p(10), A4[1]-mm2p(5)]
 
 #write
 cnv = canvas.Canvas("Qualita.pdf", pagesize=A4)
+cnv.setFontSize(9)
 
 #Info
 cnv.rect(tamanho[0], tamanho[1], -200, -60)
@@ -42,15 +43,16 @@ cnv.line(tamanho[0]/1.25, tamanho[1]/1.22, tamanho[0]/1.25, tamanho[1]/2.2)
 
 #Table Valor Total
 cnv.line(tamanho[0], tamanho[1]/1.22, tamanho[0], tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/18, tamanho[1]/1.214, "Serviços")
 
-#Linhas
+#Table Lines
 for num in range(0, len(lista)):
-    
-    print(tamanho[1]/(1.29+(0.75*num)))
+    #Texts
+
     cnv.line(tamanho[0]/18, tamanho[1]/(1.29+(0.035*num)), tamanho[0], tamanho[1]/(1.29+(0.035*num)))
     
 
-#Final
+#Table End
 cnv.line(tamanho[0]/18, tamanho[1]/2.2, tamanho[0], tamanho[1]/2.2)
 
 #Outros Impostos
