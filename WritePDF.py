@@ -9,7 +9,7 @@ def mm2p(milimetros):
 tamanho = [A4[0]-mm2p(10), A4[1]-mm2p(5)]
 
 #write
-cnv = canvas.Canvas("Qualita.pdf", pagesize=A4)
+cnv = canvas.Canvas("Template.pdf", pagesize=A4)
 cnv.setFontSize(9)
 
 #Info
