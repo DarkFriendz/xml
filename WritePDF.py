@@ -22,8 +22,11 @@ cnv.rect(tamanho[0]/18, tamanho[1]/1.10, 535, -60)
 #Table Serviços
 cnv.rect(tamanho[0]/18, tamanho[1]/1.22, 535, -20)
 
-#Table ID
+#Table
+cnv.drawString(tamanho[0]/18, tamanho[1]/1.214, "Serviços")
 cnv.line(tamanho[0]/18, tamanho[1]/1.22, tamanho[0]/18, tamanho[1]/2.2)
+
+#Table ID
 cnv.line(tamanho[0]/6, tamanho[1]/1.22, tamanho[0]/6, tamanho[1]/2.2)
 
 #Table Description
@@ -43,12 +46,29 @@ cnv.line(tamanho[0]/1.25, tamanho[1]/1.22, tamanho[0]/1.25, tamanho[1]/2.2)
 
 #Table Valor Total
 cnv.line(tamanho[0], tamanho[1]/1.22, tamanho[0], tamanho[1]/2.2)
-cnv.drawString(tamanho[0]/18, tamanho[1]/1.214, "Serviços")
 
 #Table Lines
 for num in range(0, len(lista)):
-    #Texts
+    #Table ID
+    cnv.line(tamanho[0]/6, tamanho[1]/(1.29+(0.035*num)), tamanho[0]/6, tamanho[1]/(1.29+(0.035*num)))
 
+    #Table Description
+    cnv.line(tamanho[0]/2.4, tamanho[1]/(1.29+(0.035*num)), tamanho[0]/2.4, tamanho[1]/(1.29+(0.035*num)))
+
+    #Table CST
+    cnv.line(tamanho[0]/2.1, tamanho[1]/(1.29+(0.035*num)), tamanho[0]/2.1, tamanho[1]/(1.29+(0.035*num)))
+
+    #Table Aliq
+    cnv.line(tamanho[0]/1.87, tamanho[1]/(1.29+(0.035*num)), tamanho[0]/1.87, tamanho[1]/(1.29+(0.035*num)))
+
+    #Table Valor Unitario
+    cnv.line(tamanho[0]/1.35, tamanho[1]/(1.29+(0.035*num)), tamanho[0]/1.35, tamanho[1]/(1.29+(0.035*num)))
+
+    #Table Quantidade
+    cnv.line(tamanho[0]/1.25, tamanho[1]/(1.29+(0.035*num)), tamanho[0]/1.25, tamanho[1]/(1.29+(0.035*num)))
+
+    #Table Valor Total
+    cnv.line(tamanho[0], tamanho[1]/(1.29+(0.035*num)), tamanho[0], tamanho[1]/(1.29+(0.035*num)))
     cnv.line(tamanho[0]/18, tamanho[1]/(1.29+(0.035*num)), tamanho[0], tamanho[1]/(1.29+(0.035*num)))
     
 
