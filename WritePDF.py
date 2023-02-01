@@ -28,24 +28,31 @@ cnv.line(tamanho[0]/18, tamanho[1]/1.22, tamanho[0]/18, tamanho[1]/2.2)
 
 #Table ID
 cnv.line(tamanho[0]/6, tamanho[1]/1.22, tamanho[0]/6, tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/11, tamanho[1]/1.245, "Cod.")
 
 #Table Description
 cnv.line(tamanho[0]/2.4, tamanho[1]/1.22, tamanho[0]/2.4, tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/4.6, tamanho[1]/1.245, "Descrição do Seviço")
 
 #Table CST
 cnv.line(tamanho[0]/2.1, tamanho[1]/1.22, tamanho[0]/2.1, tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/2.34, tamanho[1]/1.245, "CST.")
 
 #Table Aliq
 cnv.line(tamanho[0]/1.87, tamanho[1]/1.22, tamanho[0]/1.87, tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/2.04, tamanho[1]/1.245, "Aliq.")
 
 #Table Valor Unitario
 cnv.line(tamanho[0]/1.35, tamanho[1]/1.22, tamanho[0]/1.35, tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/1.7, tamanho[1]/1.245, "Valor unitário")
 
 #Table Quantidade
 cnv.line(tamanho[0]/1.25, tamanho[1]/1.22, tamanho[0]/1.25, tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/1.33, tamanho[1]/1.245, "Qnt.")
 
 #Table Valor Total
 cnv.line(tamanho[0], tamanho[1]/1.22, tamanho[0], tamanho[1]/2.2)
+cnv.drawString(tamanho[0]/1.16, tamanho[1]/1.245, "Valor Total")
 
 #Table Lines
 for num in range(0, len(lista)):
