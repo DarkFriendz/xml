@@ -31,6 +31,62 @@ lista = {
         "aliq": 0.00,
         "vu": 30.00,
         "amount": 12
+    },
+    4: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
+    },
+    5: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
+    },
+    6: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
+    },
+    7: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
+    },
+    8: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
+    },
+    9: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
+    },
+    10: {
+        "id": 7112000,
+        "description": "Audiometria(s)",
+        "cst": 1,
+        "aliq": 0.00,
+        "vu": 30.00,
+        "amount": 12
     }
 }
 
