@@ -45,15 +45,18 @@ cnv.drawString(mm2p(122), tamanho[1]-mm2p(12.2), f"Código de Verificação: {CV
 #Requested company - Empresa solicitada
 cnv.setFontSize(6)
 cnv.drawString(mm2p(10), tamanho[1]-mm2p(17), "Dados Tomador")
+cnv.rect(mm2p(10), tamanho[1]-mm2p(18), tamanho[0]-mm2p(10), -50)
 cnv.line(mm2p(10), tamanho[1]-mm2p(24), tamanho[0], tamanho[1]-mm2p(24))
 cnv.line(tamanho[0]-mm2p(25), tamanho[1]-mm2p(18), tamanho[0]-mm2p(25), tamanho[1]-mm2p(35.8))
+cnv.line(tamanho[0]-mm2p(65), tamanho[1]-mm2p(24), tamanho[0]-mm2p(65), tamanho[1]-mm2p(35.8))
+cnv.line(tamanho[0]-mm2p(75), tamanho[1]-mm2p(30), tamanho[0]-mm2p(75), tamanho[1]-mm2p(35.8))
+cnv.line(mm2p(10), tamanho[1]-mm2p(30), tamanho[0], tamanho[1]-mm2p(30))
 
 #Name/Corporate Name - Nome/Razão Social
 cnv.setFontSize(5)
 cnv.drawString(mm2p(12), tamanho[1]-mm2p(20), "Nome/Razão Social")
 cnv.setFontSize(8)
 cnv.drawString(mm2p(13), tamanho[1]-mm2p(22.8), f"{Empresa['name']}")
-
 
 #CFPS
 cnv.setFontSize(5)
@@ -103,40 +106,30 @@ cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(32), "CMC")
 cnv.setFontSize(8)
 cnv.drawString(tamanho[0]-mm2p(22), tamanho[1]-mm2p(34.8), f"{Empresa['CMC']}")
 
-cnv.line(tamanho[0]-mm2p(65), tamanho[1]-mm2p(24), tamanho[0]-mm2p(65), tamanho[1]-mm2p(35.8))
-
-cnv.line(tamanho[0]-mm2p(75), tamanho[1]-mm2p(30), tamanho[0]-mm2p(75), tamanho[1]-mm2p(35.8))
-
-cnv.line(mm2p(10), tamanho[1]-mm2p(30), tamanho[0], tamanho[1]-mm2p(30))
-cnv.setFontSize(9)
-cnv.rect(mm2p(10), tamanho[1]-mm2p(18), tamanho[0]-mm2p(10), -50)
-
 #Services - Serviços
 cnv.setFontSize(6)
 cnv.drawString(mm2p(10), tamanho[1]-mm2p(39), "Serviços")
-cnv.line(mm2p(30), tamanho[1]-mm2p(40), mm2p(30), tamanho[1]-mm2p(45.1))
+cnv.rect(mm2p(10), tamanho[1]-mm2p(40), tamanho[0]-mm2p(10), -15)
+cnv.line(mm2p(30), tamanho[1]-mm2p(40), mm2p(30), tamanho[1]-mm2p(159.9))
 cnv.setFontSize(7)
 cnv.drawString(mm2p(12), tamanho[1]-mm2p(43.5), "Cod. Atividade")
-cnv.line(mm2p(90), tamanho[1]-mm2p(40), mm2p(90), tamanho[1]-mm2p(45.1))
+cnv.line(mm2p(90), tamanho[1]-mm2p(40), mm2p(90), tamanho[1]-mm2p(159.9))
 cnv.drawString(mm2p(33), tamanho[1]-mm2p(43.5), "Descrição do Serviço")
-cnv.line(mm2p(101), tamanho[1]-mm2p(40), mm2p(101), tamanho[1]-mm2p(45.1))
+cnv.line(mm2p(101), tamanho[1]-mm2p(40), mm2p(101), tamanho[1]-mm2p(159.9))
 cnv.drawString(mm2p(93), tamanho[1]-mm2p(43.5), "CST")
-cnv.line(mm2p(111), tamanho[1]-mm2p(40), mm2p(111), tamanho[1]-mm2p(45.1))
+cnv.line(mm2p(111), tamanho[1]-mm2p(40), mm2p(111), tamanho[1]-mm2p(159.9))
 cnv.drawString(mm2p(104), tamanho[1]-mm2p(43.5), "Aliq")
-cnv.line(mm2p(111), tamanho[1]-mm2p(40), mm2p(111), tamanho[1]-mm2p(45.1))
+cnv.line(mm2p(111), tamanho[1]-mm2p(40), mm2p(111), tamanho[1]-mm2p(159.9))
 cnv.drawString(mm2p(112), tamanho[1]-mm2p(43.5), "Valor Unitário")
-cnv.line(mm2p(141), tamanho[1]-mm2p(40), mm2p(141), tamanho[1]-mm2p(45.1))
+cnv.line(mm2p(141), tamanho[1]-mm2p(40), mm2p(141), tamanho[1]-mm2p(159.9))
 cnv.drawString(mm2p(143), tamanho[1]-mm2p(43.5), "Unidade")
-cnv.line(mm2p(155), tamanho[1]-mm2p(40), mm2p(155), tamanho[1]-mm2p(45.1))
+cnv.line(mm2p(155), tamanho[1]-mm2p(40), mm2p(155), tamanho[1]-mm2p(159.9))
 cnv.drawString(mm2p(157), tamanho[1]-mm2p(43.5), "Valor Total")
 
 #Table
 
-cnv.rect(mm2p(10), tamanho[1]-mm2p(40), tamanho[0]-mm2p(10), -15)
-cnv.setFontSize(6)
 cnv.line(mm2p(10), tamanho[1]-mm2p(45), mm2p(10), tamanho[1]-mm2p(160))
 cnv.line(tamanho[0], tamanho[1]-mm2p(45), tamanho[0], tamanho[1]-mm2p(160))
-cnv.setFontSize(9)
 
 #End Line of Services - linha final dos serviços
 cnv.line(mm2p(10), tamanho[1]-mm2p(160), tamanho[0], tamanho[1]-mm2p(160))
