@@ -2,11 +2,18 @@
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from files.lista import lista
+from files.lista import Empresa
+from datetime import datetime
 
 def mm2p(milimetros):
     return milimetros/0.352777
 
 tamanho = [A4[0]-mm2p(10), A4[1]-mm2p(10)]
+
+data = datetime.now()
+data = datetime.strftime(data, "%d/%m/%Y - %H:%M:%S")
+
+CV = "PMWOMG4AW"
 
 #write - Escrever
 cnv = canvas.Canvas("Template.pdf", pagesize=A4)
@@ -15,7 +22,25 @@ cnv = canvas.Canvas("Template.pdf", pagesize=A4)
 cnv.setFontSize(6)
 cnv.drawString(mm2p(10), tamanho[1]+mm2p(1), "Empresa")
 cnv.rect(mm2p(10), tamanho[1], (tamanho[0]-mm2p(92)), -40)
+
+#Logo Company - logo da Empresa
+cnv.drawImage("imgs/saude.png", mm2p(10)+1, tamanho[1]-1, 120, -38)
+
+#Your Companie Info - Informações da sua empresa
+cnv.setFontSize(8)
+cnv.drawString(mm2p(55), tamanho[1]-mm2p(3.2), "Empresa Segurança da Saude LTDA")
+cnv.setFontSize(6)
+cnv.drawString(mm2p(55), tamanho[1]-mm2p(6.5), "Rua XXXXX XXXXXX XXX, 000 - (00) 0000-0000")
+cnv.drawString(mm2p(55), tamanho[1]-mm2p(9.5), "São José - SC - XXXXXXXXXXXXXX - 00000-000")
+cnv.drawString(mm2p(55), tamanho[1]-mm2p(12.5), "CNPJ: 00.000.000/0000-00 CMC: 0000000")
+
+#NF Info - NF Informações
 cnv.rect(tamanho[0], tamanho[1], -(tamanho[0]-mm2p(120)), -40)
+cnv.setFontSize(8)
+cnv.drawString(mm2p(122), tamanho[1]-mm2p(3.2), "Nota Fiscal Eletrônica de Prestação de Serviços")
+cnv.drawString(mm2p(122), tamanho[1]-mm2p(6.2), "Número: 10000")
+cnv.drawString(mm2p(122), tamanho[1]-mm2p(9.2), f"Emissão: {data}")
+cnv.drawString(mm2p(122), tamanho[1]-mm2p(12.2), f"Código de Verificação: {CV}")
 
 #Requested company - Empresa solicitada
 cnv.setFontSize(6)
@@ -26,6 +51,7 @@ cnv.line(tamanho[0]-mm2p(25), tamanho[1]-mm2p(18), tamanho[0]-mm2p(25), tamanho[
 #Name/Corporate Name - Nome/Razão Social
 cnv.setFontSize(5)
 cnv.drawString(mm2p(12), tamanho[1]-mm2p(20), "Nome/Razão Social")
+
 
 #CFPS
 cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(20), "CFPS")
