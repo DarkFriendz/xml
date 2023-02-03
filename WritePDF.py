@@ -78,6 +78,8 @@ cnv.drawString(mm2p(143), tamanho[1]-mm2p(43.5), "Unidade")
 cnv.line(mm2p(155), tamanho[1]-mm2p(40), mm2p(155), tamanho[1]-mm2p(45.1))
 cnv.drawString(mm2p(157), tamanho[1]-mm2p(43.5), "Valor Total")
 
+#Table
+
 cnv.rect(mm2p(10), tamanho[1]-mm2p(40), tamanho[0]-mm2p(10), -15)
 cnv.setFontSize(6)
 cnv.line(mm2p(10), tamanho[1]-mm2p(45), mm2p(10), tamanho[1]-mm2p(160))
@@ -91,6 +93,17 @@ cnv.line(mm2p(10), tamanho[1]-mm2p(160), tamanho[0], tamanho[1]-mm2p(160))
 cnv.setFontSize(6)
 cnv.drawString(mm2p(10), tamanho[1]-mm2p(163), "Resumo")
 cnv.rect(mm2p(10), tamanho[1]-mm2p(164), tamanho[0]-mm2p(10), -20)
+cnv.setFontSize(5)
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(166), "Base Cálculo ISSQN")
+cnv.line(mm2p(48), tamanho[1]-mm2p(164), mm2p(48), tamanho[1]-mm2p(171))
+cnv.drawString(mm2p(50), tamanho[1]-mm2p(166), "Valor ISSQN")
+cnv.line(mm2p(86), tamanho[1]-mm2p(164), mm2p(86), tamanho[1]-mm2p(171))
+cnv.drawString(mm2p(88), tamanho[1]-mm2p(166), "Base Cálculo ISSQN Subst.")
+cnv.line(mm2p(124), tamanho[1]-mm2p(164), mm2p(124), tamanho[1]-mm2p(171))
+cnv.drawString(mm2p(126), tamanho[1]-mm2p(166), "Valor ISSQN Subst.")
+cnv.line(mm2p(162), tamanho[1]-mm2p(164), mm2p(162), tamanho[1]-mm2p(171))
+cnv.drawString(mm2p(164), tamanho[1]-mm2p(166), "Descontos")
+
 cnv.setFontSize(9)
 
 #Other Taxes - Outros Impostos
@@ -104,7 +117,10 @@ cnv.setFontSize(9)
 cnv.setFontSize(6)
 cnv.drawString(mm2p(10), tamanho[1]-mm2p(206), "Valor Total")
 cnv.rect(mm2p(10), tamanho[1]-mm2p(207), tamanho[0]-mm2p(10), -20)
-cnv.setFontSize(9)
+cnv.setFontSize(5)
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(209), "Valor Total dos Serviços")
+cnv.line(tamanho[0]/2+mm2p(2), tamanho[1]-mm2p(207), tamanho[0]/2+mm2p(2), tamanho[1]-mm2p(214))
+cnv.drawString(tamanho[0]/2+mm2p(4), tamanho[1]-mm2p(209), "Valor Total da Nota")
 
 #Additional Data - Dados Adcionais
 
