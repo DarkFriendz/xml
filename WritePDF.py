@@ -20,6 +20,42 @@ cnv.rect(tamanho[0], tamanho[1], -(tamanho[0]-mm2p(120)), -40)
 #Requested company - Empresa solicitada
 cnv.setFontSize(6)
 cnv.drawString(mm2p(10), tamanho[1]-mm2p(17), "Dados Tomador")
+cnv.line(mm2p(10), tamanho[1]-mm2p(24), tamanho[0], tamanho[1]-mm2p(24))
+cnv.line(tamanho[0]-mm2p(25), tamanho[1]-mm2p(18), tamanho[0]-mm2p(25), tamanho[1]-mm2p(35.8))
+
+#Name/Corporate Name - Nome/Razão Social
+cnv.setFontSize(5)
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(20), "Nome/Razão Social")
+
+#CFPS
+cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(20), "CFPS")
+
+cnv.line(tamanho[0]-mm2p(65), tamanho[1]-mm2p(24), tamanho[0]-mm2p(65), tamanho[1]-mm2p(35.8))
+
+#Address - Endereço
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(26), "Endereço")
+
+#Neighborhood/District - Bairro/Distrito
+cnv.drawString(tamanho[0]-mm2p(63), tamanho[1]-mm2p(26), "Bairro/Distrito")
+
+#CEP
+cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(26), "CEP")
+
+cnv.line(tamanho[0]-mm2p(75), tamanho[1]-mm2p(30), tamanho[0]-mm2p(75), tamanho[1]-mm2p(35.8))
+
+#County - Município
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(32), "Município")
+
+#UF
+cnv.drawString(tamanho[0]-mm2p(73), tamanho[1]-mm2p(32), "UF")
+
+#CNPJ/CPF/Others - CNPJ/CPF/Outros
+cnv.drawString(tamanho[0]-mm2p(63), tamanho[1]-mm2p(32), "CNPJ/CPF/Outros")
+
+#CMC
+cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(32), "CMC")
+
+cnv.line(mm2p(10), tamanho[1]-mm2p(30), tamanho[0], tamanho[1]-mm2p(30))
 cnv.setFontSize(9)
 cnv.rect(mm2p(10), tamanho[1]-mm2p(18), tamanho[0]-mm2p(10), -50)
 
@@ -29,21 +65,43 @@ cnv.drawString(mm2p(10), tamanho[1]-mm2p(39), "Serviços")
 cnv.setFontSize(9)
 cnv.rect(mm2p(10), tamanho[1]-mm2p(40), tamanho[0]-mm2p(10), -15)
 cnv.setFontSize(6)
-cnv.line(mm2p(10), tamanho[1]-mm2p(45), mm2p(10), tamanho[1]-mm2p(150))
-cnv.line(tamanho[0], tamanho[1]-mm2p(45), tamanho[0], tamanho[1]-mm2p(150))
+cnv.line(mm2p(10), tamanho[1]-mm2p(45), mm2p(10), tamanho[1]-mm2p(160))
+cnv.line(tamanho[0], tamanho[1]-mm2p(45), tamanho[0], tamanho[1]-mm2p(160))
 cnv.setFontSize(9)
 
 #End Line of Services - linha final dos serviços
-cnv.line(mm2p(10), tamanho[1]-mm2p(150), tamanho[0], tamanho[1]-mm2p(150))
+cnv.line(mm2p(10), tamanho[1]-mm2p(160), tamanho[0], tamanho[1]-mm2p(160))
 
 #Summary - Resumo
 cnv.setFontSize(6)
-cnv.drawString(mm2p(10), tamanho[1]-mm2p(153), "Resumo")
-cnv.rect(mm2p(10), tamanho[1]-mm2p(154), tamanho[0]-mm2p(10), -20)
+cnv.drawString(mm2p(10), tamanho[1]-mm2p(163), "Resumo")
+cnv.rect(mm2p(10), tamanho[1]-mm2p(164), tamanho[0]-mm2p(10), -20)
 cnv.setFontSize(9)
 
-#Additional data - Dados Adcionais
+#Other Taxes - Outros Impostos
+cnv.setFontSize(6)
+cnv.drawString(mm2p(10), tamanho[1]-mm2p(174), "Outros Impostos")
+cnv.rect(mm2p(10), tamanho[1]-mm2p(175), tamanho[0]-mm2p(10), -80)
+cnv.setFontSize(9)
 
+#Valor Total - Amount
+
+cnv.setFontSize(6)
+cnv.drawString(mm2p(10), tamanho[1]-mm2p(206), "Valor Total")
+cnv.rect(mm2p(10), tamanho[1]-mm2p(207), tamanho[0]-mm2p(10), -20)
+cnv.setFontSize(9)
+
+#Additional Data - Dados Adcionais
+
+cnv.setFontSize(6)
+cnv.drawString(mm2p(10), tamanho[1]-mm2p(217), "Dados Adcionais")
+cnv.rect(mm2p(10), tamanho[1]-mm2p(218), tamanho[0]-mm2p(10), -80)
+cnv.setFontSize(9)
+
+#Final Data - Dados Final
+cnv.setFontSize(6)
+cnv.drawString(mm2p(10), tamanho[1]-mm2p(250), "Dados Finais")
+cnv.rect(mm2p(10), tamanho[1]-mm2p(251), tamanho[0]-mm2p(10), -80)
 
 '''
 #Info
