@@ -24,7 +24,7 @@ cnv.drawString(mm2p(10), tamanho[1]+mm2p(1), "Empresa")
 cnv.rect(mm2p(10), tamanho[1], (tamanho[0]-mm2p(92)), -40)
 
 #Logo Company - logo da Empresa
-cnv.drawImage("imgs/saude.png", mm2p(10)+1, tamanho[1]-1, 120, -38)
+cnv.drawImage("imgs/saude.png", mm2p(10)+mm2p(0.2), tamanho[1]-mm2p(0.2), 120, -38.8)
 
 #Your Companie Info - Informações da sua empresa
 cnv.setFontSize(8)
@@ -51,35 +51,61 @@ cnv.line(tamanho[0]-mm2p(25), tamanho[1]-mm2p(18), tamanho[0]-mm2p(25), tamanho[
 #Name/Corporate Name - Nome/Razão Social
 cnv.setFontSize(5)
 cnv.drawString(mm2p(12), tamanho[1]-mm2p(20), "Nome/Razão Social")
+cnv.setFontSize(8)
+cnv.drawString(mm2p(13), tamanho[1]-mm2p(22.8), f"{Empresa['name']}")
 
 
 #CFPS
+cnv.setFontSize(5)
 cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(20), "CFPS")
+cnv.setFontSize(8)
+cnv.drawString(tamanho[0]-mm2p(22), tamanho[1]-mm2p(22.8), f"{Empresa['CFPS']}")
+
+#Address - Endereço
+cnv.setFontSize(5)
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(26), "Endereço")
+cnv.setFontSize(8)
+cnv.drawString(mm2p(13), tamanho[1]-mm2p(28.8), f"{Empresa['endereco']}")
+
+#Neighborhood/District - Bairro/Distrito
+cnv.setFontSize(5)
+cnv.drawString(tamanho[0]-mm2p(63), tamanho[1]-mm2p(26), "Bairro/Distrito")
+cnv.setFontSize(8)
+cnv.drawString(tamanho[0]-mm2p(62), tamanho[1]-mm2p(28.8), f"{Empresa['bairro']}")
+
+#CEP
+cnv.setFontSize(5)
+cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(26), "CEP")
+cnv.setFontSize(8)
+cnv.drawString(tamanho[0]-mm2p(22), tamanho[1]-mm2p(28.8), f"{Empresa['CEP']}")
+
+#County - Município
+cnv.setFontSize(5)
+cnv.drawString(mm2p(12), tamanho[1]-mm2p(32), "Município")
+cnv.setFontSize(8)
+cnv.drawString(mm2p(13), tamanho[1]-mm2p(34.8), f"{Empresa['municipio']}")
+
+#UF
+cnv.setFontSize(5)
+cnv.drawString(tamanho[0]-mm2p(73), tamanho[1]-mm2p(32), "UF")
+cnv.setFontSize(8)
+cnv.drawString(tamanho[0]-mm2p(72), tamanho[1]-mm2p(34.8), f"{Empresa['UF']}")
+
+#CNPJ/CPF/Others - CNPJ/CPF/Outros
+cnv.setFontSize(5)
+cnv.drawString(tamanho[0]-mm2p(63), tamanho[1]-mm2p(32), "CNPJ/CPF/Outros")
+cnv.setFontSize(8)
+cnv.drawString(tamanho[0]-mm2p(62), tamanho[1]-mm2p(34.8), f"{Empresa['CNPJ/CPF']}")
+
+#CMC
+cnv.setFontSize(5)
+cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(32), "CMC")
+cnv.setFontSize(8)
+cnv.drawString(tamanho[0]-mm2p(22), tamanho[1]-mm2p(34.8), f"{Empresa['CMC']}")
 
 cnv.line(tamanho[0]-mm2p(65), tamanho[1]-mm2p(24), tamanho[0]-mm2p(65), tamanho[1]-mm2p(35.8))
 
-#Address - Endereço
-cnv.drawString(mm2p(12), tamanho[1]-mm2p(26), "Endereço")
-
-#Neighborhood/District - Bairro/Distrito
-cnv.drawString(tamanho[0]-mm2p(63), tamanho[1]-mm2p(26), "Bairro/Distrito")
-
-#CEP
-cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(26), "CEP")
-
 cnv.line(tamanho[0]-mm2p(75), tamanho[1]-mm2p(30), tamanho[0]-mm2p(75), tamanho[1]-mm2p(35.8))
-
-#County - Município
-cnv.drawString(mm2p(12), tamanho[1]-mm2p(32), "Município")
-
-#UF
-cnv.drawString(tamanho[0]-mm2p(73), tamanho[1]-mm2p(32), "UF")
-
-#CNPJ/CPF/Others - CNPJ/CPF/Outros
-cnv.drawString(tamanho[0]-mm2p(63), tamanho[1]-mm2p(32), "CNPJ/CPF/Outros")
-
-#CMC
-cnv.drawString(tamanho[0]-mm2p(23), tamanho[1]-mm2p(32), "CMC")
 
 cnv.line(mm2p(10), tamanho[1]-mm2p(30), tamanho[0], tamanho[1]-mm2p(30))
 cnv.setFontSize(9)
