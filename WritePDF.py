@@ -1,7 +1,7 @@
 #Assets
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
-from lista import lista
+from files.lista import lista
 
 def mm2p(milimetros):
     return milimetros/0.352777
